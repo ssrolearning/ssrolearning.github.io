@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3100:8000"
+    environment:
+      - SERVICE_BASE_URL="todayassi.azurewebsites.net"
+      - DB_USER=tykimos
+      - DB_PASSWORD=Xodud79*t
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=langchat
